@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<root>
+	<!--  加载数据  --> 
+  <panourl>http://localhost:8017/public/getpanoinfo.aspx?panoid={1}&amp;placeid={2}</panourl> 
+	<!--  全景图片下载地址 --> 
+  <panoimg>http://localhost:8017/data/disney/</panoimg> 
+  <panoSett>
+		<tilt max="70" min="-60" />
+  </panoSett>
+	
+
+
+  <mapid>14</mapid> 
+  
+  <sett>		
+		<!--<n w="2048" h="1024" s="512" />-->
+		<!--<f w="4096" h="2048" s="512" />-->
+		<!--<e w="8192" h="4096" s="512" />-->
+		<g w="10240" h="5120" s="512" />
+	</sett>
+
+</root>

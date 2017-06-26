@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="hd.aspx.cs" Inherits="asp_hd" %>

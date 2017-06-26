@@ -1,0 +1,112 @@
+html, body  { height:100%; overflow: hidden}
+            body { margin:0; padding:0; overflow:auto; text-align:center; 
+                   background-color: #ffffff; }   
+            object:focus { outline:none; }
+            #flashContent { display:none; }
+/*#wBox .wBox_b {
+	filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+  background-image:url(wbox.gif);
+  width:10px;
+}*/
+.bodymain{height:100%; width:100%; z-index:1}
+#wBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  text-align: left;
+  display:none;
+}
+
+#wBox .wBox_popup {
+  position: relative;
+}
+
+#wBox table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#wBox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+/*#wBox .wBox_body {
+  background-color:#ffffff;
+    border:1px solid #999;
+}*/
+
+#wBox img {
+  border: 0;
+  margin: 0;
+}
+#wBox .wBox_title {
+  height:36px;
+  color:#000000;
+  width:100%;
+  background:url(titleBG.png) repeat-x;
+}
+#wBox .wBox_title .wBox_itemTitle{
+    padding-left:5px;
+    overflow:hidden;
+	font-size:14px;
+font-weight:bold;
+}
+#wBox .wBox_title .wBox_close{
+    background:url(close.png) no-repeat 0 0;
+    height:14px;
+    width:14px;
+    overflow:hidden;
+    cursor:pointer;
+}
+#wBox .wBox_title .on{
+    background-position:0 -14px;
+}
+/*#wBox .wBox_tl, #wBox .wBox_tr, #wBox .wBox_bl, #wBox .wBox_br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  background-image:url(wbox.gif);
+  padding: 0;
+  filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity: 0.8;
+}
+*/
+.wBox_bb{ background:url(titleBfo.png) no-repeat 0 0;;height: 10px;
+  width: 10px;}
+#wBox #wBoxContent{
+	padding:3px;
+	background:url(titlemanBG.png);
+}
+#wBox_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+#wBox .wBox_load{
+	width:270px;
+}
+.wBox_hide {
+  z-index:10;
+}
+.demo {
+		width:436px;
+	}
+	.demo0{width:460px;}
+	.demo0 p a:link,.demo0 p a:visited{display:block; height:20px; color:#333; text-decoration:none; background:#FAFAFA; margin:3px 0}
+	.demo0 p a:hover,.demo0 p a:active{display:block; height:20px; color:#333; text-decoration:none; background:#EBEBEB; margin:3px 0}
+	.demo1{width:401px; height:100px; padding:20px 0 0 6px}
+	.demo1 a:link,.demo1 a:visited{display:inline-block;text-decoration:none; float:left; width:54px; height:54px; margin:12px; }
+.wBox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+#wBox #wBox_loading{
+	width:32px;height:32px;margin:0 auto;
+}

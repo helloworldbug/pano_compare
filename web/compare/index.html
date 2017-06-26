@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程对比案例</title>
+<link rel="stylesheet" type="text/css" href="../common/css/style.css" />
+ <link rel="stylesheet" href="../common/css/jquery-ui.css" />
+<script src="../common/css/jquery-1.9.1.js"></script>
+ <script src="../common/css/jquery-ui.js"></script>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="wbox/web.js"></script> 
+</head>
+
+<body>
+ 
+<div class="main">
+
+<div class="flashbox"><div id="flashContent"></div>
+
+</div>
+
+</div>
+<div class="mytool">
+  <div class="compare">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="sl">
+  <tr>
+    <td width="22" ><input type="text" id="amount" class="data1"/>
+   </td><td rowspan="2" width="18"> </td>
+    <td rowspan="2" width="130">
+    <div class="sli" id="sli">
+    <div id="slider"></div><div id="slider2"></div>
+    </div></td>
+  </tr>
+  <tr>
+    <td class="sli1"><input type="text" id="amount2" class="data2"/></td>
+  </tr>
+</table>
+  </div>
+  <div class="gntl" style="margin-right:70px">
+     <a href="javascript:void(0)" onClick="setFovHand('add')" class="tools1"></a>
+     <a href="javascript:void(0)" onClick="setFovHand('del')" class="tools2"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('left')" class="tools3"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('bottom')" class="tools4"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('top')" class="tools5"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('right')" class="tools6"></a>
+     <a href="javascript:void(0)" onClick="showComparePano()" class="tools7"></a>
+  </div>
+<!--<div class="sk"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="mytr">
+  <tr>
+    <td width="22" id="sliderTd" ><span class="pre"></span></td>
+    <td style="position:relative;background: url(../common/images/bg_time.png) 50% 40% no-repeat;"><div id="slider"></div>
+    	<div id="slider2"></div>
+    	
+</td>
+    <td width="22"><span class="next"></span></td>
+  </tr>
+</table>
+   <input type="text" id="amount" class="data1"/>
+   <input type="text" id="amount2" class="data2"/>
+
+</div>
+   
+  <div class="bottool">
+     <a href="javascript:void(0)" onClick="setFovHand('add')" class="tool0"></a>
+     <a href="javascript:void(0)" onClick="setFovHand('del')" class="tool1"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('top')" class="tool2"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('bottom')" class="tool3"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('left')" class="tool4"></a>
+     <a href="javascript:void(0)" onClick="setPTHand('right')" class="tool5"></a>
+     <a href="javascript:void(0)" onClick="showComparePano();" class="tool6"></a>
+  </div>-->
+
+</div>
+  <a class="centool_l" href="javascript:void(0)" onClick="pullLeft();"></a>
+  <a class="centool_r" href="javascript:void(0)" onClick="pullRight();"></a>
+  <div class="dateshow_l" id="leftDateLabel"></div>
+  <div class="dateshow_r" id="rightDateLabel"></div>
+<div class="panoShow" id="panoMask"></div>
+</body>
+</html>
+
+     
+        	<!--<input type="button" value="加载场景" onClick="loadHand()" />
+        	<input type="button" value="左右" onClick="modeChange('0')" />
+        	<input type="button" value="上下" onClick="modeChange('1')" />
+        	<input type="button" value="保存" onClick="saveHand()" />
+        	<input type="button" value="同步" onClick="synchroHand()" />
+        	<input type="button" value="纠正" onClick="rectifyHand()" />
+        	<input type="button" value="放大" onClick="setFovHand('add')" />
+        	<input type="button" value="缩小" onClick="setFovHand('del')" />
+        	<input type="button" value="左移" onClick="setPTHand('left')" />
+        	<input type="button" value="右移" onClick="setPTHand('right')" />
+        	<input type="button" value="上移" onClick="setPTHand('top')" />
+        	<input type="button" value="下移" onClick="setPTHand('bottom')" />
+        	<input type="button" value="全屏" onClick="screenHand()" />-->

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="getpanoinfo.aspx.cs" Inherits="getpanoinfo" %>

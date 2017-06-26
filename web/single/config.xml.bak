@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<root>
+
+	<!-- panoinfo-->
+	<getpanoinfo>http://192.168.250.233:8088/public/getpanoinfo.aspx?panoid={1}&placeid={2}</getpanoinfo>
+	<!--  脚印地址-->
+	<getfootlist> </getfootlist>
+	<!-- poi地址-->
+	<getpoilist> </getpoilist>
+	<!-- 分块图下载地址 -->
+	<panoimg>http://192.168.250.233:8088/data/</panoimg>  
+	<!--<upload>http://192.168.0.34:8013/upload/</upload>
+        
+	 <!-- 百分比loading -->
+    <loading>assets/swf/loading_as44.swf</loading>
+	<!-- 二级加载loading -->
+	<minorload>assets/swf/imgloading.swf</minorload>
+	<mousespeed>32</mousespeed>    <!-- 鼠标转动速度 -->
+	<panoSett>
+		<tilt max="70" min="-60" />
+	</panoSett>
+	<sett>
+		<!--
+		<n w="2048" h="1024" s="512" />-->
+		<!--<f w="4096" h="2048" s="512" />-->
+		<e w="8192" h="4096" s="512" />
+	</sett>
+</root>

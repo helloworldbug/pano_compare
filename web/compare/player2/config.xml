@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<root>
+  <send_url>http://192.168.0.100:82/</send_url> 
+  <correct_name>iscorrect</correct_name> 
+  <correct_info>correctinfo</correct_info> 
+<!--  加载数据  --> 
+  <panourl>http://192.168.0.31:8090/</panourl> 
+  <panoname>pano2001</panoname> 
+<!--  全景图片下载地址 --> 
+  <panoimg>http://192.168.0.31:8089/img/pano/20121012/</panoimg> 
+ <!--  全景勾勒点击的请求  --> 
+  <openimgurl>http://192.168.0.31/chinaart/aspx/</openimgurl> 
+<!--  下载图片的地址  --> 
+  <downimgurl>http://192.168.0.31:8089/img/other/flashPopUp/</downimgurl> 
+ <!--  下载资源的地址 --> 
+  <asseturl>http://192.168.0.31:8089/</asseturl> 
+  <mapid>85</mapid> 
+</root>

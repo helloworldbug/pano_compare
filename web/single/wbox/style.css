@@ -1,0 +1,102 @@
+html, body  { height:100%; overflow: hidden}
+body { margin:0; padding:0; text-align:center; background-color: #ffffff; }   
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	color: #F00;
+}
+a:active {
+	text-decoration: none;
+	color: #930;
+}
+img{border:none}
+object:focus { outline:none; }
+#flashContent { display:none; }
+.top{background:url(img/top_bg.jpg); height:95px;overflow: hidden}
+.top_logo{float:left}
+.top_ri{float:right}
+.main{background:#fff;position:absolute; width:100%; height:100%; z-index:1}
+.bodymain{height:100%; }
+.foot{height:56px; overflow:hidden; background:#000; position:absolute; bottom:0; left:0; width:100%;filter:alpha(opacity=50); /*IE*/
+-moz-opacity:0.5; /*MOZ , FF*/
+opacity:0.5; /*CSS3, FF1.5*/}
+.foot ul{margin:0 auto; padding:10px 0 0 0 ; list-style:none; width:574px; overflow:hidden}
+.foot ul li{float:left; display:inline-block; width:40px; height:40px; padding-left:12px}
+.foot ul li a{ display:block;background:url(img/cd.png) no-repeat;width:40px; height:40px;}
+.cd1:link,.cd1:visited{background-position:-11px -1px}
+.cd1:hover,.cd1:active{background-position:-11px -48px}
+.cd2:link,.cd2:visited{background-position:-61px -1px}
+.cd2:hover,.cd2:active{background-position:-61px -48px}
+.cd3:link,.cd3:visited{background-position:-113px -2px}
+.cd3:hover,.cd3:active{background-position:-113px -49px}
+.cd4:link,.cd4:visited{background-position:-165px -2px}
+.cd4:hover,.cd4:active{background-position:-165px -49px}
+.cd5:link,.cd5:visited{background-position:-217px -2px}
+.cd5:hover,.cd5:active{background-position:-217px -49px}
+.cd6:link,.cd6:visited{background-position:-268px -2px}
+.cd6:hover,.cd6:active{background-position:-268px -49px}
+.cd7:link,.cd7:visited{background-position:-319px -2px}
+.cd7:hover,.cd7:active{background-position:-319px -49px}
+/*.cd8:link,.cd8:visited{background-position:-371px -1px}
+.cd8:hover,.cd8:active{background-position:-371px -48px}*/
+
+.cd8:link,.cd8:visited,.cd8a:link,.cd8a:visited{background-position:-575px -3px}
+.cd8:hover,.cd8:active,.cd8a:hover,.cd8a:active{background-position:-575px -50px}
+
+.cd9:link,.cd9:visited{background-position:-422px -1px}
+.cd9:hover,.cd9:active{background-position:-422px -48px}
+.cd10:link,.cd10:visited{background-position:-474px -2px}
+.cd10:hover,.cd10:active{background-position:-474px -49px}
+.cd11:link,.cd11:visited{background-position:-525px -3px}
+.cd11:hover,.cd11:active{background-position:-525px -50px}
+#tooltip{
+	position:absolute;
+	border:1px solid #ddd;
+	background:#333;
+	padding:4px;
+	color:#fff; font-size:12px;
+	display:none;
+	z-index:9999;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; 
+}
+#helpclose{float:right; widows:18px; height:18px; cursor:pointer; padding:3px; margin:6px 14px 0 0; overflow:hidden}
+.bodytop{height:30px; background:#000; background-image: filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; position:absolute;left:0; width:100%; top:0; overflow:hidden; line-height:30px}
+.bodytop .bodytop_1{ width:50%; float:left; text-align:right}
+.bodytop .bodytop_2{ width:50%; float:right; text-align:left}
+.bodytop select{ margin:0 4px}
+
+.bodytop1{height:70px; background:#000; background-image: filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; position:absolute;left:0; width:100px; top:0; overflow:hidden; line-height:30px}
+.bodytop1 .bodytop_1{ width:100px; float:left; text-align:left}
+.bodytop1 .bodytop_2{ width:100px; float:left; text-align:left}
+.bodytop1 select{ margin:0 4px}
+#helptip{width:288px; height:224px; background:url(img/help.png); color:#FFF; position:absolute}
+.mytool{ width:326px; height:94px; background:url(templ1/bg.png) no-repeat; position:absolute;   bottom:2px; z-index:99; padding-left:2px}
+.bottool a{display:inline-block; width:32px; height:32px; float:left; margin:4px 0 0 12px}
+.tool0:link,.tool0:visited{background:url(templ1/zoom_in.png) no-repeat}
+.tool0:hover,.tool0:active{background:url(templ1/zoom_in.png) no-repeat}
+.tool1:link,.tool1:visited{background:url(templ1/zoom_out.png) no-repeat}
+.tool1:hover,.tool1:active{background:url(templ1/zoom_out.png) no-repeat}
+.tool2:link,.tool2:visited{background:url(templ1/up.png) no-repeat}
+.tool2:hover,.tool2:active{background:url(templ1/up.png) no-repeat}
+.tool3:link,.tool3:visited{background:url(templ1/down.png) no-repeat}
+.tool3:hover,.tool3:active{background:url(templ1/down.png) no-repeat}
+.tool4:link,.tool4:visited{background:url(templ1/left.png) no-repeat}
+.tool4:hover,.tool4:active{background:url(templ1/left.png) no-repeat}
+.tool5:link,.tool5:visited{background:url(templ1/right.png) no-repeat}
+.tool5:hover,.tool5:active{background:url(templ1/right.png) no-repeat}
+.tool6:link,.tool6:visited{background:url(templ1/VS.png) no-repeat}
+.tool6:hover,.tool6:active{background:url(templ1/VS.png) no-repeat}
+.pre{background:url(templ1/pre.png) no-repeat; width:18px; height:18px; display:block}
+.next{background:url(templ1/next.png) no-repeat; width:18px; height:18px; display:block}
+.sk{height:30px; padding-top:15px; position:relative}
+.mytr tr td{text-align:center}
+.data1{ position:absolute; top:0px; left:145px; color:#FFF; background:#333; width:60px; border:none; text-align:center;font-size:11px}
+.flashbox{width:100%; height:100%; position:absolute; left:0; top:0}
+.centool_l{background:url(templ1/l.png) no-repeat; width:14px; height:27px; position:absolute; z-index:99}
+.centool_r{background:url(templ1/r.png) no-repeat; width:14px; height:27px; position:absolute; z-index:99}

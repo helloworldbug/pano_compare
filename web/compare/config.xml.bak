@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<root>
+	<!--  加载数据  --> 
+  <panourl>http://192.168.250.233:8088/public/getpanoinfo.aspx?panoid={1}&amp;placeid={2}</panourl> 
+	<!--  全景图片下载地址 --> 
+  <panoimg>http://192.168.250.233:8088/data/disney/</panoimg> 
+  <panoSett>
+		<tilt max="70" min="-60" />
+	</panoSett>
+
+  <mapid>14</mapid> 
+</root>

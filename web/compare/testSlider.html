@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>jQuery UI Slider - Default functionality</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="wbox/style.css" />
+ <link rel="stylesheet" href="wbox/jquery-ui.css" />
+<script>
+$(function() {
+		$( "#slider" ).slider({						
+								min: 1,
+								max: 12,
+								value:1,
+								stop:function( event, ui ) {
+									//alert(ui.value);
+								//alert( $("#slider>a").css("left"));
+									},
+								slide: function( event, ui ) {			 
+									
+								}
+								});
+ 		$("#slider>a").css("backgroundImage","url(wbox/templ1/time_left.png)")
+
+});
+
+$(function() {
+		$( "#slider2" ).slider({						
+								min: 1,
+								max: 12,
+								value:1,
+								stop:function( event, ui ) {
+									//alert(ui.value);
+									//alert( $("#slider > a").length);
+									},
+								slide: function( event, ui ) {			 
+									
+								}
+								});
+		$("#slider2>a").css("backgroundImage","url(wbox/templ1/time_right.png)");
+});
+
+
+</script>
+</head>
+<body>
+<div id="slider"></div>
+<div id="slider2"></div>
+</body>
+</html>

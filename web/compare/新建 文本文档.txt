@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+    <!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
+    <head>
+        <title></title>
+        <meta name="google" value="notranslate" />         
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css" media="screen"> 
+            html, body  { height:100%; }
+            body { margin:0; padding:0; overflow:auto; text-align:center; 
+                   background-color: #ffffff; }   
+            object:focus { outline:none; }
+            #flashContent { display:none; }
+        </style>
+        
+        <link rel="stylesheet" type="text/css" href="history/history.css" />
+        <script type="text/javascript" src="history/history.js"></script>
+            
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+            var swfVersionStr = "10.2.0";
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#ffffff";
+            params.allowScriptAccess = "sameDomain";
+            params.allowFullScreen = "true";
+            var attributes = {};
+            attributes.id = "Main";
+            attributes.name = "Main";
+            attributes.align = "middle";
+            attributes.allowFullscreen = "true";
+            attributes.allowScriptAccess = "sameDomain";
+            swfobject.embedSWF(
+                "Main.swf", "flashContent", 
+                "100%", "100%", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+            
+            function modeChange(val){
+            	var pano=document.getElementById("Main");
+            	pano.modeChangeHand(val);
+            }
+            
+            function saveHand(){
+            	var pano=document.getElementById("Main");
+            	var obj=pano.saveHand();
+            	alert("全景一角度:"+obj.a1+"\n全景二角度:"+obj.a2);
+            	pano.showPanoHand(1,"shzx_002",180,0,90);
+            	pano.showPanoHand(2,"shzx_001",180,0,90);
+            	pano.synchroHand();
+            }
+            
+            function synchroHand(){
+            	var pano=document.getElementById("Main");
+            	pano.synchroHand();
+            }
+            
+            function rectifyHand(){
+            	var pano=document.getElementById("Main");
+            	pano.rectifyHand();            
+            }
+            
+            function loadHand(){
+            	alert("加载");
+            	var pano=document.getElementById("Main");
+            		var ptfObj = eval("("+pano.getPTFHand()+")");
+								   	pano.showPanoHand(1,"disney_5_20131126","18",ptfObj.p1,ptfObj.t1,ptfObj.f1);
+            	//pano.showPanoHand(1,"disney_5_20131126","18");
+            	//pano.showPanoHand(2,"shzx_001","1",180,0,90);
+            }
+            
+            function initCompleteHand(){
+            	var pano=document.getElementById("Main");
+            	//alert(pano);
+            	pano.synchroHand();
+            	pano.showPanoHand(1,"disney_5_20131009","18");
+            	pano.showPanoHand(2,"disney_5_20131126","18");
+            }
+            
+            //全景加载完成
+            function loadCompleteHand(){
+            	var pano=document.getElementById("Main");
+            	//alert(pano);
+            	var str='[{"panoid":"pano2","x":100,"y":100,"north":270.239990234375,"dp":0.0,"dt":0.0,"df":0.0,"iconurl":null,"icontypeid":null}]';
+    			//pano.addMapView("MapView2.swf","map.png",str);    
+            }
+            
+            function setFovHand(str){
+            	var pano=document.getElementById("Main");
+            	pano.setFovHand(str);
+            }
+            
+            function setPTHand(str){
+            	var pano=document.getElementById("Main");
+            	pano.setPTHand(str);            	
+            }
+            
+            function screenHand(){
+            	var pano=document.getElementById("Main");
+            	pano.screenHand();
+            }
+            
+            function getptf(){
+            	var pano=document.getElementById("Main");
+            	//alert(pano.getPTFHand());
+            }
+            
+            function setptf(){
+            	var pano=document.getElementById("Main");
+            	pano.setPTFHand(1,180,0,90);
+            }
+            
+            function setAngle(){
+            	var pano=document.getElementById("Main");
+            	pano.setPanoFromRadar("1",270);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div id="flashContent">
+        </div>
+        <div>
+        	<input type="button" value="加载场景" onClick="loadHand()" />
+        	<input type="button" value="左右" onClick="modeChange('0')" />
+        	<input type="button" value="上下" onClick="modeChange('1')" />
+        	<input type="button" value="获取ptf" onClick="getptf()" />
+        	<input type="button" value="设置" onClick="setAngle()" />
+        </div>
+   </body>
+</html>
+
